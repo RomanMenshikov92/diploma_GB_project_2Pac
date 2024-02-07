@@ -1,0 +1,26 @@
+.detailed
+  position: absolute
+  bottom: 2%
+  right: 2%
+  z-index: 999
+  @include tablet
+    right: 5%
+  @include mobile
+    bottom: 0%
+
+  &__link
+    display: inline-block
+    padding-bottom: 5px
+    font-family: $fontFamily-OksFree
+    border-bottom: 2px solid $color-white
+    @include fontSize-lineHeight(32px, normal)
+    @include transition((transform, color), 0.4s, ease)
+    &:focus-visible,
+    &:hover
+      transform: scale(1.2)
+      color: $color-red
+    &:active
+      transform: scale(1.2)
+      color: $color-red-dark
+    @include mobile
+      font-size: 22px

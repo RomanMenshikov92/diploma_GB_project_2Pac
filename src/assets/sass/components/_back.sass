@@ -1,0 +1,18 @@
+.back
+  position: absolute
+  bottom: 5%
+  right: 5%
+
+  &__link
+    display: inline-block
+    font-family: $fontFamily-OksFree
+    color: $color-white
+    @include fontSize-lineHeight(32px, normal)
+    @include transition((color, transform), 0.4s, ease)
+    &:focus-visible,
+    &:hover
+      transform: scale(1.2)
+      color: $color-red
+    &:active
+      transform: scale(1.2)
+      color: $color-red-dark

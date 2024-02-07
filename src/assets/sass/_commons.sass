@@ -1,0 +1,27 @@
+@import "./_vars"
+
+.title
+  font-family: $fontFamily-OksFree
+  font-size: 128px
+  line-height: normal
+  color: $color-white
+  text-transform: uppercase
+  letter-spacing: 4px
+
+.paragraph
+  font-size: 22px
+  line-height: normal
+  color: $color-white
+
+.container
+  position: relative
+  width: 100%
+  max-width: $MaxWidthContainerDesktop
+  min-width: $MinWidthContainerDesktop
+  padding: 0 $widthContainerPadding
+  margin: 0 auto
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  @include mobile
+    padding: 0 15px

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App.vue renders correct Pug in app layout 1`] = `
+<div class="page">
+  <!---->
+  <!---->
+  <!---->
+</div>
+`;

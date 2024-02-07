@@ -1,0 +1,178 @@
+@mixin section-home
+  &__main
+    position: relative
+    height: $min-height-section
+    display: flex
+    flex-direction: column
+    gap: 50px
+    align-items: flex-end
+    justify-content: center
+    margin-bottom: 10px
+    padding: 10px
+    padding-top: 120px
+    @include tablet
+      align-content: center
+      grid-gap: 30px
+    @include tablet-mini
+      min-height: auto
+      flex-direction: column-reverse
+    @include mobile
+      gap: 5px
+      justify-content: space-evenly
+      margin-bottom: 20px
+
+    &-videocontent
+      position: relative
+      display: flex
+      flex-direction: row-reverse
+      margin-top: 30px
+      @include laptop
+        margin-top: 80px
+      @include tablet
+        margin-top: 30px
+      @include mobile
+        align-self: center
+        margin-top: 0
+        transform: translateX(20px)
+
+    &-icon svg
+      position: absolute
+      top: -30px
+      right: 45px
+      width: 475px
+      height: 395px
+      @include tablet
+        top: -55px
+        right: 32px
+        width: 386px
+      @include tablet-mini
+        top: -58px
+        right: 28px
+        width: 360px
+        height: 378px
+      @include mobile
+        width: 285px
+        height: 222px
+        right: 11px
+        top: -32px
+
+    &-video
+      z-index: -999
+      width: 500px
+      height: 350px
+      border-radius: 20px
+      background-color: $color-black
+      @include tablet
+        width: 400px
+        height: 290px
+      @include tablet-mini
+        width: 370px
+        height: 270px
+      @include mobile
+        width: 270px
+        height: 185px
+
+    &-controls
+      position: absolute
+      top: 55%
+      left: 0%
+      transform: translateY(-50%)
+      display: flex
+      gap: 15px
+      flex-direction: column
+      justify-content: center
+      @include mobile
+        top: 50%
+        left: -7%
+        padding: 10px 6px
+        background-color: $color-black
+        border-radius: 15px
+
+    &-btn
+      & svg
+        @include tablet
+          width: 40px
+          height: 40px
+        @include tablet-mini
+          width: 35px
+          height: 35px
+        @include mobile
+          width: 25px
+          height: 25px
+
+      &:focus path
+      &:hover path
+        fill: $color-red
+      &:active path
+        fill: $color-red-dark
+
+    &-blockquote
+      max-width: 642px
+      width: 100%
+      font-family: $fontFamily-OksFree
+      letter-spacing: 4px
+      text-align: center
+      @include laptop
+        max-width: 550px
+        margin-top: 30px
+      @include tablet
+        max-width: 450px
+      @include tablet-mini
+        max-width: 300px
+      @include mobile
+        max-width: 170px
+        margin-top: 0
+
+      &-value
+        margin-bottom: 35px
+        @include fontSize-lineHeight(48px, 108.333%)
+        @include laptop
+          font-size: 40px
+        @include tablet
+          margin-bottom: 38px
+          font-size: 36px
+        @include tablet-mini
+          font-size: 33px
+        @include mobile
+          margin-bottom: 15px
+          font-size: 20px
+          text-shadow: 3px 3px 15px white
+
+      &-date
+        display: block
+        @include fontSize-lineHeight(36px, normal)
+        text-align: end
+        letter-spacing: 2px
+        @include tablet
+          font-size: 26px
+        @include tablet-mini
+          font-size: 20px
+        @include mobile
+          font-size: 16px
+          text-shadow: 3px 3px 15px white
+
+    &-signature
+      position: relative
+      @include tablet
+        position: relative
+      @include tablet-mini
+        margin-top: 20px
+      @include mobile
+        z-index: 888
+        @include backgroundColor-backdropFilter(rgba(0, 0, 0, 0.1), blur(5px))
+
+      & svg
+        width: 500px
+        height: 225px
+        @include tablet
+          width: 400px
+        @include tablet-mini
+          width: 300px
+          height: auto
+        @include mobile
+          width: 150px
+      &:focus path
+      &:hover path
+        fill: $color-red
+      &:active path
+        fill: $color-red-dark

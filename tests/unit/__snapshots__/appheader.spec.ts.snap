@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppHeader.vue renders correct Pug in header layout 1`] = `
+<header class="header">
+  <div class="container header__container">
+    <!---->
+  </div>
+</header>
+`;

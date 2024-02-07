@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppMain.vue renders correct Pug in main layout 1`] = `
+<main class="main">
+  <div class="container main__container">
+    <!---->
+  </div>
+</main>
+`;

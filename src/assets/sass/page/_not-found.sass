@@ -1,0 +1,68 @@
+.not-found
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: flex-end
+  min-height: calc($min-height-section - 120px)
+  text-align: end
+  @include mobile
+    min-height: calc($min-height-section - 146px)
+
+  &__text
+
+  &__title
+    display: inline-flex
+    gap: 10px
+    font-family: $fontFamily-OksFree
+    font-size: 100px
+    svg
+      &:nth-child(1),
+      &:nth-child(3)
+        width: 125px
+        height: 310px
+        @include tablet
+          width: 90px
+          height: 175px
+        @include mobile
+          width: 50px
+          height: 90px
+      &:nth-child(2)
+        width: 150px
+        height: 310px
+        @include tablet
+          width: 90px
+          height: 175px
+        @include mobile
+          width: 50px
+          height: 90px
+
+  &__paragraph
+    max-width: 400px
+    width: 100%
+    @include fontSize-lineHeight(35px, normal)
+    @include tablet
+      max-width: 350px
+      font-size: 30px
+    @include mobile
+      max-width: 270px
+      font-size: 25px
+
+  &__link
+    position: absolute
+    bottom: 5%
+    right: 5%
+    font-family: $fontFamily-OksFree
+    letter-spacing: 3px
+    @include fontSize-lineHeight(25px, normal)
+    @include transition((color, transform), 0.4s, ease)
+    text-align: center
+    @include mobile
+      bottom: 15%
+      right: 35%
+    &:focus-visible,
+    &:hover
+      transform: scale(1.5)
+      color: $color-red
+    &:active
+      transform: scale(1.5)
+      color: $color-red-dark

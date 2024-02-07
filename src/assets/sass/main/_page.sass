@@ -1,0 +1,19 @@
+.page
+  position: relative
+  z-index: 1
+  background-image: $background-url-main
+  background-position: $background-position-main
+  background-repeat: $background-repeat-main
+  background-attachment: $background-attachment-main
+  background-size: $background-size-main
+  @include tablet
+    background-image: $background-url-main-tablet
+  @include mobile
+    @include background($background-url-main-mobile, (7% 7%), no-repeat, 100%)
+
+  &.page-404
+    background-image: $background-url-not-found
+    @include tablet
+      background-image: $background-url-not-found-tablet
+    @include mobile
+      background-image: $background-url-not-found-mobile
