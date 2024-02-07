@@ -2,8 +2,6 @@
 node_modules
 /dist
 
-/src/data/firebase/key.ts
-
 # local env files
 .env.local
 .env.*.local
