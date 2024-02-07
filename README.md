@@ -1,6 +1,6 @@
 # Diploma work - Fan-site 2Pac
 
-## [Pages](https://diploma-gb-project-2-pac.vercel.app//)
+## [Pages](https://diploma-gb-project-2-pac.vercel.app)
 
 ## [Layout from Figma](https://www.figma.com/file/c8Fy4sadzvhQk2jozDj1tn/%D0%9C%D0%B0%D0%BA%D0%B5%D1%82?type=design&node-id=759%3A314&mode=design&t=Q5YPuOzzg4Oaue88-1)
 
